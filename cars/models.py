@@ -2,6 +2,7 @@ from django.db import models
 from datetime import date
 from phone_field import PhoneField
 
+#Car Brand Drop down fields
 CAR_BRAND_CHOICES = (
     ('toyota','TOYOTA'),
     ('nissan', 'NISSAN'),
@@ -10,13 +11,13 @@ CAR_BRAND_CHOICES = (
     ('BMW','BMW'),
     ('mercedes','MERCEDES'),
 )
-
+#Car Type Drop down fields
 CAR_TYPE_CHOICES = (
     ('saloon','SALOON'),
     ('lorry', 'LORRY'),
     ('truck','TRUCK'),   
 )
-
+#Car Colour Drop down fields
 CAR_COLOUR_CHOICES = (
     ('red','RED'),
     ('white', 'WHITE'),
@@ -24,7 +25,9 @@ CAR_COLOUR_CHOICES = (
 )
 
 # Create your models here.
-
+"""
+This is the Car Owner Model Class that defines the database fields
+"""
 class Owner(models.Model):
     name = models.CharField(max_length=15)
     phone_number = PhoneField(blank=True, help_text='Contact phone number')
@@ -35,6 +38,9 @@ class Owner(models.Model):
     def __str__(self):
         return f" Owner Names: {self.name} | Email Address: {self.email_address} | TIN Number: {self.tin_number}"
 
+"""
+This is the Car Model Class that defines the database fields
+"""
 class Car(models.Model):
     registration_number = models.CharField(max_length=15)
     car_brand = models.CharField(max_length=20, choices = CAR_BRAND_CHOICES, default='toyota')
