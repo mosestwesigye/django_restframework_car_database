@@ -6,6 +6,6 @@ from cars.views import *
 Car URLPath
 """
 urlpatterns = [
-    path('cars/', CarAPIView.as_view()),
+    path('', CarAPIView.as_view()),
     
 ]
