@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-fp#&)!$xsly@h9#*w^l0bv_eex!@pt*pl&kme$9#^rahcu%eb0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'https://twesigye-api-test.herokuapp.com/']
+ALLOWED_HOSTS = ['localhost', '104.131.46.18']
 
 
 # Application definition
