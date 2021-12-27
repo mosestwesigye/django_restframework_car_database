@@ -1,7 +1,7 @@
 # Django Rest FrameWork
 This is a simple car database application meant to test the functionality of the django rest framework
 
-The sample application can be accessed via this link: http://104.131.46.18:8000/
+The sample application can be accessed via this link: http://104.131.46.18/
 
 Steps to run this code:
 1. Clone this repo
