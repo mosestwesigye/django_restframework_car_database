@@ -92,7 +92,7 @@ else:
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'cardb',
         'USER': 'cardbuser',
-        'PASSWORD': 'Hsdp@dm!n2019',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',
         'PORT': '',
     }
